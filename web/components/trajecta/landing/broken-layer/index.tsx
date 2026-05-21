@@ -9,12 +9,12 @@ export function BrokenLayer() {
   return (
     <section
       aria-labelledby="broken-layer-heading"
-      className="mx-auto flex w-full max-w-380 flex-col gap-20 px-5 py-24 sm:px-8 lg:px-10"
+      className="mx-auto flex w-full max-w-7xl flex-col gap-20 px-5 py-24 sm:px-8 lg:px-10"
     >
-      <div className="reveal-up grid gap-4">
+      <div className="reveal-up grid gap-4 text-center">
         <p className="typo-section-eyebrow">{brokenLayerSectionContent.eyebrow}</p>
         <h2 id="broken-layer-heading" className="typo-display-lg text-balance">
-          {brokenLayerSectionContent.title}
+          {brokenLayerSectionContent.title} <br />
           <AnimatedGradientText> {brokenLayerSectionContent.titleAccent}</AnimatedGradientText>
         </h2>
       </div>

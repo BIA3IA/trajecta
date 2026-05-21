@@ -1,5 +1,3 @@
-import type { SectionHeadingContent } from "../shared/types"
-
 export type PricingAudience = "talents" | "companies"
 
 export type PricingPlan = {
@@ -15,7 +13,10 @@ export type PricingPlan = {
   features: string[]
 }
 
-export type PricingContent = SectionHeadingContent & {
+export type PricingContent = {
+  eyebrow: string
+  title: string
   titleAccent: string
+  description: string
   plans: PricingPlan[]
 }

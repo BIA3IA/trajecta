@@ -1,0 +1,101 @@
+@import "tailwindcss";
+@import "./typography.css";
+@import "./animations.css";
+
+@theme {
+  --font-display: var(--font-space-grotesk);
+  --font-body: var(--font-inter);
+}
+
+:root {
+  --background: #0b0714;
+  --surface-1: #141022;
+  --surface-2: #1b1630;
+  --surface-3: #241d3d;
+
+  --border-subtle: #2a2147;
+  --border-strong: #3a2d63;
+
+  --text-primary: #f5f2ff;
+  --text-secondary: #b8afd6;
+  --text-muted: #8e84b2;
+
+  --brand-primary: #8b5cf6;
+  --brand-primary-hover: #a78bfa;
+  --brand-soft: #c4b5fd;
+  --brand-accent: #e879f9;
+
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --info: #60a5fa;
+
+  --radius-card-value: 16px;
+  --radius-panel-value: 12px;
+  --radius-pill-value: 999px;
+
+  --focus-ring: 0 0 0 3px rgb(139 92 246 / 0.28);
+  --shadow-brand: 0 0 30px rgb(139 92 246 / 0.28);
+  --shadow-elevated: 0 24px 90px rgb(7 4 18 / 0.45);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface-1: var(--surface-1);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+
+  --color-border-subtle: var(--border-subtle);
+  --color-border-strong: var(--border-strong);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-primary-hover: var(--brand-primary-hover);
+  --color-brand-soft: var(--brand-soft);
+  --color-brand-accent: var(--brand-accent);
+
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+  --color-info: var(--info);
+
+  --radius-card: var(--radius-card-value);
+  --radius-panel: var(--radius-panel-value);
+  --radius-pill: var(--radius-pill-value);
+
+  --gradient-brand: linear-gradient(135deg, #c4b5fd 0%, #8b5cf6 55%, #6d28d9 100%);
+  --shadow-brand: var(--shadow-brand);
+  --shadow-elevated: var(--shadow-elevated);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+  color: var(--text-primary);
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 50% -10%, rgb(139 92 246 / 0.2), transparent 34rem),
+    linear-gradient(180deg, #0b0714 0%, #0d0817 48%, #090611 100%);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgb(139 92 246 / 0.45);
+  color: var(--text-primary);
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}

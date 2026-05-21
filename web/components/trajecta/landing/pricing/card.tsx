@@ -12,8 +12,6 @@ const variantStyles = {
     topLine: "bg-[linear-gradient(90deg,transparent,rgba(196,181,253,0.34),transparent)]",
     priceValue: "text-text-primary",
     button: "relative bg-white/6 text-text-secondary hover:bg-white/10 hover:text-text-primary",
-    buttonIcon: "bg-white/14 text-white",
-    buttonSheen: "bg-white/10",
     shimmer: "from-transparent via-brand-soft/14 to-transparent",
     featureIcon: "text-brand-accent",
   },
@@ -24,8 +22,6 @@ const variantStyles = {
     priceValue: "text-brand-soft",
     button:
       "relative animate-gradient-shift-x bg-brand-vivid bg-size-[200%_100%] text-white shadow-[0_10px_24px_rgba(139,92,246,0.22),0_10px_24px_rgba(232,121,249,0.14),inset_0_1px_0_rgba(255,255,255,0.18)] hover:brightness-110 hover:shadow-[0_14px_28px_rgba(139,92,246,0.30),inset_0_1px_0_rgba(255,255,255,0.18)]",
-    buttonIcon: "bg-white/14 text-white",
-    buttonSheen: "bg-white/12",
     shimmer: "card-shimmer-brand",
     featureIcon: "text-brand-accent",
   },
@@ -37,8 +33,6 @@ const variantStyles = {
     topLine: string
     priceValue: string
     button: string
-    buttonIcon: string
-    buttonSheen: string
     shimmer: string
     featureIcon: string
   }
@@ -87,8 +81,6 @@ export function PricingCard({
               label={cta}
               href={href}
               className={styles.button}
-              iconClassName={styles.buttonIcon}
-              sheenClassName={styles.buttonSheen}
               variant={highlighted ? "default" : "outline"}
             />
           </div>

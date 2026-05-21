@@ -1,8 +1,8 @@
 import Link from "next/link"
 import { FiArrowRight, FiCheckCircle } from "react-icons/fi"
 import { Button } from "@/components/ui/button"
+import { HighlightPill } from "@/components/ui/highlight-pill"
 import { gradientButtonClassName } from "@/lib/styles"
-import { HighlightPill } from "../../../ui/highlight-pill"
 import { AnimatedGradientText } from "../shared/animated-gradient-text"
 import { heroContent, heroHighlights } from "./data"
 

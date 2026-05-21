@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card"
 import { JourneySection } from "./journey"
 import type { AudienceItem } from "./types"
 
-export function AudienceCard({ id, title, text, badge, summary, tone, icon: Icon, journey }: AudienceItem) {
+export function AudienceCard({ id, title, text, badge, icon: Icon, journey }: AudienceItem) {
   return (
     <Card
       id={id}
@@ -14,23 +14,25 @@ export function AudienceCard({ id, title, text, badge, summary, tone, icon: Icon
       <div className="card-top-line card-top-line-brand" />
 
       <div className="relative">
-        <div className="flex items-start gap-4">
-          <div className="flex items-center gap-4">
-            <span className="flex size-12 shrink-0 items-center justify-center rounded-panel bg-[linear-gradient(135deg,rgba(139,92,246,0.68),rgba(232,121,249,0.54))] text-white shadow-[0_0_12px_rgba(232,121,249,0.18)] ring-1 ring-brand-accent/28">
-              <Icon className="size-7" aria-hidden="true" />
-            </span>
+        <div className="flex items-center gap-4">
+          <span className="icon-brand flex size-14 shrink-0 items-center justify-center rounded-panel text-white ring-1 ring-brand-accent/28">
+            <Icon className="size-7" aria-hidden="true" />
+          </span>
 
-            <div>
-              {badge ? <p className="typo-section-eyebrow mb-2 text-text-muted/78">{badge}</p> : null}
-              <h3 className="typo-h2 text-text-primary">{title}</h3>
-              <p className="typo-body-sm mt-2 text-text-muted">{summary}</p>
-            </div>
+          <div className="flex flex-col gap-1">
+            {badge ? <p className="typo-section-eyebrow text-text-muted/78">{badge}</p> : null}
+            <h3 className="typo-h2 text-text-primary">{title}</h3>
           </div>
         </div>
 
         <p className="typo-body my-6 max-w-2xl text-text-secondary">{text}</p>
 
-        <JourneySection journey={journey} tone={tone} />
+        <div className="flex items-center justify-between gap-4">
+          <p className="typo-section-eyebrow">How it works</p>
+          <div className="card-top-line-brand hidden h-px flex-1 sm:block" />
+        </div>
+
+        <JourneySection journey={journey} />
       </div>
     </Card>
   )

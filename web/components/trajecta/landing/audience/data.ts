@@ -3,10 +3,10 @@ import type { AudienceItem, AudienceSectionContent, JourneyStep } from "./types"
 
 export const audienceSectionContent: AudienceSectionContent = {
   eyebrow: "Built for two audiences",
-  title: "One intelligence engine, two",
-  titleAccent: "ways to use it.",
+  title: "One intelligence engine,",
+  titleAccent: "two ways to use it.",
   description:
-    "Trajecta supports people planning a move and teams evaluating readiness. What changes is the decision: personal growth, hiring, or internal mobility.",
+    "Whether you're planning a transition or evaluating someone else's, Trajecta gives you the same thing: evidence over assumption. Because whether the decision is yours or about you, it should be based on something real.",
 }
 
 const talentJourney: JourneyStep[] = [
@@ -51,7 +51,6 @@ export const audienceCards: AudienceItem[] = [
     title: "For Talents",
     text: "Turn scattered experience into a Skill Identity, compare it with target roles, and focus on the proof that makes the next move credible.",
     badge: "Built for career transitions",
-    summary: "Useful when you need to know what you can credibly move toward next.",
     tone: "talent",
     icon: FiUsers,
     journey: talentJourney,
@@ -61,7 +60,6 @@ export const audienceCards: AudienceItem[] = [
     title: "For Companies",
     text: "Turn role expectations into structured requirements, compare candidates or internal talent with evidence, and keep decisions explainable.",
     badge: "Built for decision support",
-    summary: "Useful when hiring and internal mobility need more than CV shorthand.",
     tone: "company",
     icon: FiBriefcase,
     journey: companyJourney,

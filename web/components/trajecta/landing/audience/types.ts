@@ -1,10 +1,12 @@
 import type { IconType } from "react-icons"
-import type { SectionHeadingContent } from "../shared/types"
 
 export type AudienceTone = "talent" | "company"
 
-export type AudienceSectionContent = SectionHeadingContent & {
+export type AudienceSectionContent = {
+  eyebrow: string
+  title: string
   titleAccent: string
+  description: string
 }
 
 export type AudienceItem = {
@@ -12,7 +14,6 @@ export type AudienceItem = {
   title: string
   text: string
   badge?: string
-  summary: string
   tone: AudienceTone
   icon: IconType
   journey: JourneyStep[]

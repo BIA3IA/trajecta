@@ -26,8 +26,8 @@ export function BrokenLayer() {
         </div>
 
         <div className="flex shrink-0 items-center justify-center py-2 md:py-0">
-          <FiArrowRight className="hidden size-6 text-brand-soft md:block" />
-          <FiArrowDown className="size-6 text-brand-soft md:hidden" />
+          <FiArrowRight className="hidden size-6 text-brand-soft md:block" aria-hidden="true" />
+          <FiArrowDown className="size-6 text-brand-soft md:hidden" aria-hidden="true" />
         </div>
 
         <div className="flex flex-1 flex-col gap-2">

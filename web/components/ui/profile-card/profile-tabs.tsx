@@ -1,5 +1,5 @@
-import { SegmentedControl, type SegmentedControlOption } from "@/components/trajecta/landing/shared/segmented-control"
-import type { ProfileTab } from "../types"
+import { SegmentedControl, type SegmentedControlOption } from "@/components/ui/segmented-control"
+import type { ProfileTab } from "./types"
 
 type ProfileTabsProps = {
   tabs: ProfileTab[]
@@ -21,7 +21,7 @@ export function ProfileTabs({ tabs }: ProfileTabsProps) {
       options={options}
       value={activeTab}
       label="Skill intelligence views"
-      className="relative mt-6 border border-white/8 bg-black/12 shadow-[inset_0_1px_0_rgba(255,255,255,0.03)]"
+      className="relative mt-3 border border-white/8 bg-black/12 shadow-[inset_0_1px_0_rgba(255,255,255,0.03)]"
       activeClassName="bg-brand-vivid text-white shadow-[0_10px_30px_rgba(139,92,246,0.20),0_10px_30px_rgba(232,121,249,0.12),inset_0_1px_0_rgba(255,255,255,0.14)]"
       inactiveClassName="text-text-muted hover:text-text-secondary"
       shimmerActive

@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 
-import { SegmentedControl } from "../shared/segmented-control"
+import { SegmentedControl } from "../../../ui/segmented-control"
 import { PricingCard } from "./card"
 import { pricingAudienceOptions, pricingContent } from "./data"
 import type { PricingAudience } from "./types"

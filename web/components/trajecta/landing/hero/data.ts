@@ -1,5 +1,6 @@
+import { ProfileCardProps } from "@/components/ui/profile-card/types"
+import { Hint } from "@/components/ui/types"
 import { FiCompass, FiCpu, FiLayers, FiTarget } from "react-icons/fi"
-import type { Hint, ProfileCardProps } from "../../../ui/types"
 
 export const heroContent = {
   eyebrow: "Career intelligence built around real skill evidence",
@@ -19,8 +20,6 @@ export const heroHighlights = ["Map transferable skills", "Measure role fit", "T
 export const previewCardContent: ProfileCardProps = {
   eyebrow: "Skill intelligence layer",
   title: "What Trajecta sees behind a profile",
-  badgeLabel: "Role-fit view",
-  badgeIcon: FiCpu,
   tabs: [
     { id: "skill-identity", label: "Skill identity", active: true },
     { id: "role-fit", label: "Role fit" },
@@ -63,7 +62,7 @@ export const previewHints: Hint[] = [
     value: "Build SQL proof",
   },
   {
-    position: "top-left",
+    position: "top-right",
     label: "Decision context",
     value: "Junior Data Analyst",
   },

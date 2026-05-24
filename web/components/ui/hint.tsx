@@ -2,7 +2,9 @@ import { cn } from "@/lib/utils"
 import type { HintPosition, Hint as HintProps } from "./types"
 
 const positionClassNames: Record<HintPosition, string> = {
-  "bottom-right": "-bottom-5 -right-2 animate-float-soft",
+  "bottom-right": "-bottom-5 -right-5 animate-float-soft",
+  "top-right": "-top-5 -right-12 animate-float-soft [animation-delay:0.7s]",
+  "bottom-left": "-bottom-5 -left-2 animate-float-soft [animation-delay:0.35s]",
   "top-left": "-left-12 -top-8 bg-surface-2/95 backdrop-blur animate-float-soft [animation-delay:1.4s]",
 }
 

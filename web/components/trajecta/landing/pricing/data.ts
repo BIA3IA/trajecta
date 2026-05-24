@@ -1,6 +1,6 @@
 import { contactMailto } from "@/lib/site"
-import type { SegmentedControlOption } from "../shared/segmented-control"
 import type { PricingAudience, PricingContent } from "./types"
+import { SegmentedControlOption } from "@/components/ui/segmented-control"
 
 export const pricingAudienceOptions: SegmentedControlOption<PricingAudience>[] = [
   { value: "talents", label: "Talents" },

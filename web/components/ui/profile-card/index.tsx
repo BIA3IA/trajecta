@@ -1,16 +1,9 @@
-import { Badge } from "@/components/ui/badge"
-import type { ProfileCardProps } from "./types"
 import { ProfileMetricCard } from "./profile-metric"
 import { ProfileSignalCard } from "./profile-signal"
 import { ProfileTabs } from "./profile-tabs"
+import type { ProfileCardProps } from "./types"
 
-export function ProfileCard({
-  eyebrow,
-  title,
-  tabs,
-  metrics,
-  signals,
-}: ProfileCardProps) {
+export function ProfileCard({ eyebrow, title, tabs, metrics, signals }: ProfileCardProps) {
   return (
     <div className="surface-brand relative animate-float-soft overflow-hidden rounded-card border border-brand-primary/18 p-4">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_0%,rgba(196,181,253,0.12),transparent_28%)]" />
@@ -19,7 +12,7 @@ export function ProfileCard({
         <div className="card-top-line bg-[linear-gradient(90deg,transparent,rgba(196,181,253,0.45),transparent)]" />
         <div className="absolute inset-y-0 left-0 w-1/2 animate-scan bg-[linear-gradient(90deg,transparent,rgba(196,181,253,0.08),transparent)]" />
 
-        <header className="flex items-start flex-col gap-1">
+        <header className="flex flex-col items-start gap-1">
           <p className="typo-section-eyebrow text-text-muted/90">{eyebrow}</p>
           <h2 className="typo-h3 max-w-lg text-balance">{title}</h2>
         </header>

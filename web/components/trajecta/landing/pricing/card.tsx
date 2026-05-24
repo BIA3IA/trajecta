@@ -43,7 +43,7 @@ export function PricingCard({
               className={cn(
                 highlighted
                   ? gradientButtonClassName
-                  : "relative border-none bg-white/6 px-5 py-3 text-text-secondary shadow-none transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] hover:bg-white/10 hover:text-text-primary"
+                  : "hover:-translate-y-0.5 relative border-none bg-white/6 px-5 py-3 text-text-secondary shadow-none transition-all duration-200 ease-out hover:scale-[1.02] hover:bg-white/10 hover:text-text-primary"
               )}
             >
               <Link href={href}>

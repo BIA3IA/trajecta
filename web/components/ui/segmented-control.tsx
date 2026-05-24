@@ -35,28 +35,28 @@ export function SegmentedControl<TValue extends string>({
         className={cn("inline-grid rounded-pill p-1", className)}
         style={{ gridTemplateColumns: `repeat(${options.length}, minmax(0, 1fr))` }}
       >
-      {options.map((option) => {
-        const isActive = option.value === value
+        {options.map((option) => {
+          const isActive = option.value === value
 
-        return (
-          <button
-            key={option.value}
-            type="button"
-            onClick={() => onChange?.(option.value)}
-            className={cn(
-              "typo-label relative overflow-hidden rounded-pill px-4 py-2 text-center transition-all duration-200",
-              isActive ? activeClassName : inactiveClassName
-            )}
-            aria-pressed={isActive}
-            disabled={!onChange}
-          >
-            {isActive && shimmerActive ? (
-              <span className="pointer-events-none absolute inset-y-0 left-0 w-1/2 skew-x-[-20deg] animate-shimmer-sweep bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.26),transparent)]" />
-            ) : null}
-            {option.label}
-          </button>
-        )
-      })}
+          return (
+            <button
+              key={option.value}
+              type="button"
+              onClick={() => onChange?.(option.value)}
+              className={cn(
+                "typo-label relative overflow-hidden rounded-pill px-4 py-2 text-center transition-all duration-200",
+                isActive ? activeClassName : inactiveClassName
+              )}
+              aria-pressed={isActive}
+              disabled={!onChange}
+            >
+              {isActive && shimmerActive ? (
+                <span className="pointer-events-none absolute inset-y-0 left-0 w-1/2 skew-x-[-20deg] animate-shimmer-sweep bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.26),transparent)]" />
+              ) : null}
+              {option.label}
+            </button>
+          )
+        })}
       </div>
     </fieldset>
   )

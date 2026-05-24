@@ -1,6 +1,5 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { gradientButtonClassName } from "@/lib/styles"
 
 export default function NotFound() {
   return (
@@ -16,7 +15,7 @@ export default function NotFound() {
         The link may be outdated, broken, or pointing to a page that has been moved.
       </p>
 
-      <Button asChild className={gradientButtonClassName}>
+      <Button asChild variant="gradient">
         <Link href="/">
           <span className="relative z-10">Back to home</span>
         </Link>

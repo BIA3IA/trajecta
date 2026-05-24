@@ -8,7 +8,7 @@ export function AudienceSection() {
       aria-labelledby="audience-heading"
       className="mx-auto w-full max-w-350 px-5 py-24 sm:px-8 lg:px-10"
     >
-      <div className="mx-auto max-w-5xl text-center">
+      <div className="reveal-up mx-auto max-w-5xl text-center">
         <p className="typo-section-eyebrow">{audienceSectionContent.eyebrow}</p>
         <h2 id="audience-heading" className="typo-display-lg mt-4 text-balance">
           {audienceSectionContent.title}

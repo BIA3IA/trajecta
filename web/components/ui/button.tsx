@@ -21,6 +21,8 @@ const buttonVariants = cva(
           "border border-border-strong bg-surface-1 text-text-primary hover:border-brand-primary hover:bg-surface-2",
         outline:
           "border border-border-subtle bg-surface-2 text-text-secondary hover:border-brand-primary/50 hover:text-brand-soft",
+        gradient:
+          "group animate-gradient-shift-x w-fit overflow-hidden border border-brand-primary/40 bg-brand-vivid bg-size-[200%_100%] px-5 py-3 text-white shadow-[0_18px_40px_rgba(139,92,246,0.28),inset_0_1px_0_rgba(255,255,255,0.16)] hover:-translate-y-0.5 hover:scale-[1.02]",
       },
     },
     defaultVariants: {

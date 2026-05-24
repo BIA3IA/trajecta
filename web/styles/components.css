@@ -1,0 +1,143 @@
+@utility bg-brand-vivid {
+  background-image: linear-gradient(
+    120deg,
+    var(--color-brand-primary) 0%,
+    #9b6bff 35%,
+    var(--color-brand-accent) 72%,
+    var(--color-brand-primary) 100%
+  );
+}
+
+@utility surface-brand {
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--color-surface-2) 96%, transparent),
+    color-mix(in srgb, var(--color-surface-1) 92%, transparent)
+  );
+}
+
+@utility surface-control {
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--color-surface-2) 92%, transparent),
+    color-mix(in srgb, var(--color-surface-1) 92%, transparent)
+  );
+  border: 1px solid color-mix(in srgb, var(--color-brand-soft) 12%, transparent);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+@utility icon-brand {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--color-brand-primary) 72%, transparent),
+    color-mix(in srgb, var(--color-brand-accent) 60%, transparent)
+  );
+}
+
+@utility step-badge {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  width: 1.75rem;
+  height: 1.75rem;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  color: white;
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--color-brand-accent) 28%, transparent),
+    0 0 12px color-mix(in srgb, var(--color-brand-accent) 18%, transparent);
+}
+
+@utility card-border {
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+@utility card-hover {
+  transition: all 200ms ease-out;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
+
+@utility card-hover-brand {
+  &:hover {
+    border-color: color-mix(in srgb, var(--color-brand-primary) 24%, transparent);
+    box-shadow:
+      0 18px 42px color-mix(in srgb, var(--color-brand-primary) 12%, transparent),
+      inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  }
+}
+
+@utility card-glow-overlay {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+
+@utility card-glow-brand {
+  background: radial-gradient(
+    circle at 100% 0%,
+    color-mix(in srgb, var(--color-brand-primary) 18%, transparent),
+    transparent 24rem
+  );
+}
+
+@utility card-shimmer {
+  pointer-events: none;
+  position: absolute;
+  opacity: 0.8;
+  filter: blur(2rem);
+  animation: shimmer-sweep 3.8s ease-in-out infinite;
+}
+
+@utility card-shimmer-brand {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--color-brand-primary) 16%, transparent),
+    transparent
+  );
+}
+
+@utility card-top-line {
+  pointer-events: none;
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  height: 1px;
+}
+
+@utility card-top-line-brand {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--color-brand-accent) 38%, transparent),
+    color-mix(in srgb, var(--color-brand-primary) 48%, transparent),
+    transparent
+  );
+}
+
+@utility card-left-rail {
+  position: absolute;
+  top: 1.5rem;
+  bottom: 1.5rem;
+  left: 0;
+  width: 1px;
+}
+
+@utility card-left-rail-brand {
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--color-brand-accent) 38%, transparent),
+    color-mix(in srgb, var(--color-brand-primary) 34%, transparent),
+    transparent
+  );
+}

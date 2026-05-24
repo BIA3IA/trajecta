@@ -2,7 +2,6 @@ import Link from "next/link"
 import { FiArrowRight, FiCheckCircle } from "react-icons/fi"
 import { Button } from "@/components/ui/button"
 import { HighlightPill } from "@/components/ui/highlight-pill"
-import { gradientButtonClassName } from "@/lib/styles"
 import { heroContent, heroHighlights } from "./data"
 
 export function HeroContent() {
@@ -23,7 +22,7 @@ export function HeroContent() {
         ))}
       </div>
 
-      <Button asChild className={gradientButtonClassName}>
+      <Button asChild variant="gradient">
         <Link href={heroContent.cta.href}>
           <span className="relative z-10">{heroContent.cta.label}</span>
           <FiArrowRight

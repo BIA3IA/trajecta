@@ -2,7 +2,6 @@ import Link from "next/link"
 import { FiArrowRight, FiCheck } from "react-icons/fi"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { gradientButtonClassName } from "@/lib/styles"
 import { cn } from "@/lib/utils"
 import type { PricingPlan } from "./types"
 
@@ -40,10 +39,10 @@ export function PricingCard({
           <div className="ml-auto shrink-0">
             <Button
               asChild
+              variant={highlighted ? "gradient" : "default"}
               className={cn(
-                highlighted
-                  ? gradientButtonClassName
-                  : "hover:-translate-y-0.5 relative border-none bg-white/6 px-5 py-3 text-text-secondary shadow-none transition-all duration-200 ease-out hover:scale-[1.02] hover:bg-white/10 hover:text-text-primary"
+                !highlighted &&
+                  "hover:-translate-y-0.5 border-none bg-white/6 px-5 py-3 text-text-secondary shadow-none transition-all duration-200 ease-out hover:scale-[1.02] hover:bg-white/10 hover:text-text-primary"
               )}
             >
               <Link href={href}>

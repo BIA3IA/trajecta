@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 
-import { AnimatedGradientText } from "../shared/animated-gradient-text"
 import { SegmentedControl } from "../shared/segmented-control"
 import { PricingCard } from "./card"
 import { pricingAudienceOptions, pricingContent } from "./data"
@@ -21,7 +20,7 @@ export function PricingSection() {
         <p className="typo-section-eyebrow">{content.eyebrow}</p>
         <h2 id="pricing-heading" className="typo-display-lg text-balance">
           {content.title} <br />
-          <AnimatedGradientText>{content.titleAccent}</AnimatedGradientText>
+          <span className="text-brand-gradient">{content.titleAccent}</span>
         </h2>
         <p className="typo-body-lg text-text-secondary">{content.description}</p>
       </div>

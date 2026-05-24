@@ -3,7 +3,6 @@ import { FiArrowRight, FiCheckCircle } from "react-icons/fi"
 import { Button } from "@/components/ui/button"
 import { HighlightPill } from "@/components/ui/highlight-pill"
 import { gradientButtonClassName } from "@/lib/styles"
-import { AnimatedGradientText } from "../shared/animated-gradient-text"
 import { heroContent, heroHighlights } from "./data"
 
 export function HeroContent() {
@@ -13,7 +12,7 @@ export function HeroContent() {
 
       <h1 id="hero-heading" className="typo-display-xl mt-4 max-w-4xl text-balance">
         <span className="hidden sm:inline">{heroContent.titleLead} </span>
-        {heroContent.titleBridge} <AnimatedGradientText>{heroContent.titleAccent}</AnimatedGradientText>
+        {heroContent.titleBridge} <span className="text-brand-gradient">{heroContent.titleAccent}</span>
       </h1>
 
       <p className="typo-body-lg mt-6 max-w-2xl text-text-secondary">{heroContent.description}</p>

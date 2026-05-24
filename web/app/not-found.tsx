@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { AnimatedGradientText } from "@/components/trajecta/landing/shared/animated-gradient-text"
 import { Button } from "@/components/ui/button"
 import { gradientButtonClassName } from "@/lib/styles"
 
@@ -10,7 +9,7 @@ export default function NotFound() {
 
       <h1 className="typo-display-lg text-balance text-text-primary">
         This page does not exist
-        <AnimatedGradientText> in the Trajecta layer.</AnimatedGradientText>
+        <span className="text-brand-gradient"> in the Trajecta layer.</span>
       </h1>
 
       <p className="typo-body-lg max-w-2xl text-text-secondary">

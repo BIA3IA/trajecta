@@ -1,4 +1,3 @@
-import { AnimatedGradientText } from "../shared/animated-gradient-text"
 import { AudienceCard } from "./card"
 import { audienceCards, audienceSectionContent } from "./data"
 
@@ -13,7 +12,7 @@ export function AudienceSection() {
         <p className="typo-section-eyebrow">{audienceSectionContent.eyebrow}</p>
         <h2 id="audience-heading" className="typo-display-lg mt-4 text-balance">
           {audienceSectionContent.title}
-          <AnimatedGradientText> {audienceSectionContent.titleAccent}</AnimatedGradientText>
+          <span className="text-brand-gradient"> {audienceSectionContent.titleAccent}</span>
         </h2>
         <p className="typo-body-lg mt-6 text-text-secondary">{audienceSectionContent.description}</p>
       </div>

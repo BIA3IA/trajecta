@@ -1,5 +1,4 @@
 import { FiArrowDown, FiArrowRight } from "react-icons/fi"
-import { AnimatedGradientText } from "../shared/animated-gradient-text"
 import { BrokenLayerCard } from "./card"
 import { brokenLayerItems, brokenLayerSectionContent } from "./data"
 
@@ -15,7 +14,7 @@ export function BrokenLayer() {
         <p className="typo-section-eyebrow">{brokenLayerSectionContent.eyebrow}</p>
         <h2 id="broken-layer-heading" className="typo-display-lg text-balance">
           {brokenLayerSectionContent.title} <br />
-          <AnimatedGradientText> {brokenLayerSectionContent.titleAccent}</AnimatedGradientText>
+          <span className="text-brand-gradient"> {brokenLayerSectionContent.titleAccent}</span>
         </h2>
       </div>
 

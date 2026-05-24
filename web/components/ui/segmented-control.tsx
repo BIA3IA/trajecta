@@ -2,11 +2,6 @@
 
 import { cn } from "@/lib/utils"
 
-export type SegmentedControlOption<TValue extends string> = {
-  label: string
-  value: TValue
-}
-
 type SegmentedControlProps<TValue extends string> = {
   options: SegmentedControlOption<TValue>[]
   value: TValue
@@ -16,6 +11,11 @@ type SegmentedControlProps<TValue extends string> = {
   activeClassName: string
   inactiveClassName: string
   shimmerActive?: boolean
+}
+
+export type SegmentedControlOption<TValue extends string> = {
+  label: string
+  value: TValue
 }
 
 export function SegmentedControl<TValue extends string>({

@@ -1,6 +1,6 @@
 import { FiCompass, FiLayers, FiTarget } from "react-icons/fi"
+import type { HintProps } from "@/components/ui/hint"
 import type { ProfileCardProps } from "@/components/ui/profile-card/types"
-import type { Hint } from "@/components/ui/types"
 
 export const heroContent = {
   eyebrow: "Career intelligence built around real skill evidence",
@@ -55,7 +55,7 @@ export const previewCardContent: ProfileCardProps = {
   ],
 }
 
-export const previewHints: Hint[] = [
+export const previewHints: HintProps[] = [
   {
     position: "bottom-right",
     label: "Next action",

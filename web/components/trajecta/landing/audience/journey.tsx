@@ -6,10 +6,7 @@ export function JourneySection({ journey }: { journey: JourneyStep[] }) {
     <div className="relative mt-4 grid gap-3 lg:grid-cols-3">
       <div className="card-top-line-brand pointer-events-none absolute top-3 right-8 left-8 hidden h-px lg:block" />
       {journey.map((step, index) => (
-        <Card
-          key={step.id}
-          className="group/step relative p-4 transition-all duration-200"
-        >
+        <Card key={step.id} className="group/step relative p-4 transition-all duration-200">
           <div className="card-glow-overlay card-glow-brand group-hover/step:opacity-100" />
           <div className="flex items-center gap-3">
             <span className="step-badge icon-brand">{index + 1}</span>

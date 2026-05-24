@@ -1,4 +1,4 @@
-import { SegmentedControl, type SegmentedControlOption } from "../../trajecta/landing/shared/segmented-control"
+import { SegmentedControl, type SegmentedControlOption } from "@/components/trajecta/landing/shared/segmented-control"
 import type { ProfileTab } from "../types"
 
 type ProfileTabsProps = {

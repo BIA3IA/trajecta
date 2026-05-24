@@ -6,7 +6,7 @@ export type PricingPlan = {
   label: string
   description: string
   priceLabel: string
-  note?: string
+  note: string
   cta: string
   href: string
   highlighted?: boolean

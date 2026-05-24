@@ -15,7 +15,6 @@ type SegmentedControlProps<TValue extends string> = {
   className?: string
   activeClassName: string
   inactiveClassName: string
-  itemClassName?: string
   shimmerActive?: boolean
 }
 
@@ -27,12 +26,15 @@ export function SegmentedControl<TValue extends string>({
   className,
   activeClassName,
   inactiveClassName,
-  itemClassName,
   shimmerActive = false,
 }: SegmentedControlProps<TValue>) {
   return (
-    <fieldset className={cn("inline-flex rounded-pill p-1", className)}>
+    <fieldset>
       {label && <legend className="sr-only">{label}</legend>}
+      <div
+        className={cn("inline-grid rounded-pill p-1", className)}
+        style={{ gridTemplateColumns: `repeat(${options.length}, minmax(0, 1fr))` }}
+      >
       {options.map((option) => {
         const isActive = option.value === value
 
@@ -42,8 +44,7 @@ export function SegmentedControl<TValue extends string>({
             type="button"
             onClick={() => onChange?.(option.value)}
             className={cn(
-              "typo-label relative flex-1 overflow-hidden rounded-pill px-4 py-2 text-center transition-all duration-200",
-              itemClassName,
+              "typo-label relative overflow-hidden rounded-pill px-4 py-2 text-center transition-all duration-200",
               isActive ? activeClassName : inactiveClassName
             )}
             aria-pressed={isActive}
@@ -56,6 +57,7 @@ export function SegmentedControl<TValue extends string>({
           </button>
         )
       })}
+      </div>
     </fieldset>
   )
 }

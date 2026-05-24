@@ -20,7 +20,7 @@ export function PricingCard({
   features,
 }: PricingCardProps) {
   return (
-    <Card className="group card-border card-hover surface-brand card-hover-brand relative order-brand-primary/26 flex h-full flex-col overflow-hidden p-6 md:p-8">
+    <Card className="group card-border card-hover surface-brand card-hover-brand relative flex h-full flex-col overflow-hidden p-6 md:p-8">
       <div className="card-glow-overlay card-glow-brand group-hover:opacity-100" />
       <div className="card-shimmer card-shimmer-brand -top-6 left-[-16%] h-56 w-32 rotate-[-22deg]" />
       <div className="card-top-line card-top-line-brand" />
@@ -35,7 +35,7 @@ export function PricingCard({
         <div className="flex items-center gap-4">
           <div className="flex items-end gap-2">
             <span className="typo-price text-text-primary">{priceLabel}</span>
-            {note ? <span className="typo-body-sm mb-1.5 text-text-muted">{note}</span> : null}
+            <span className="typo-body-sm mb-1.5 text-text-muted">{note}</span>
           </div>
           <div className="ml-auto shrink-0">
             <Button
@@ -43,7 +43,7 @@ export function PricingCard({
               className={cn(
                 highlighted
                   ? gradientButtonClassName
-                  : "relative border-none bg-white/6 px-5 py-3 text-text-secondary shadow-none hover:bg-white/10 hover:text-text-primary"
+                  : "relative border-none bg-white/6 px-5 py-3 text-text-secondary shadow-none transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] hover:bg-white/10 hover:text-text-primary"
               )}
             >
               <Link href={href}>

@@ -10,7 +10,7 @@ export const heroContent = {
     "Trajecta helps people and teams understand fit, potential, and next steps by looking at skill evidence, role requirements, and the type of gap that determines the right action.",
   cta: {
     href: "/try",
-    label: "Try It Now",
+    label: "Try Trajecta in 5 Minutes",
   },
 } as const
 

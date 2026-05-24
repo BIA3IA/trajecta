@@ -33,7 +33,7 @@ export function PricingSection() {
           onChange={setAudience}
           label="Select audience"
           className="surface-control"
-          activeClassName="bg-background text-text-primary"
+          activeClassName="bg-brand-vivid text-text-primary"
           inactiveClassName="text-text-secondary hover:text-text-primary"
         />
       </div>

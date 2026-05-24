@@ -4,10 +4,7 @@ import type { AudienceItem } from "./types"
 
 export function AudienceCard({ id, title, text, badge, icon: Icon, journey }: AudienceItem) {
   return (
-    <Card
-      id={id}
-      className="group card-border card-hover card-hover-brand surface-brand relative overflow-hidden p-6 md:p-8"
-    >
+    <Card id={id} className="card-hover p-6 md:p-8">
       <div className="card-glow-overlay card-glow-brand group-hover:opacity-100" />
       <div className="card-shimmer -top-4 card-shimmer-brand left-[-18%] h-56 w-32 rotate-[-22deg]" />
       <div className="card-left-rail card-left-rail-brand" />

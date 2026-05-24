@@ -14,7 +14,7 @@ const toneStyles = {
     label: "text-text-muted/60",
   },
   future: {
-    card: "surface-brand card-hover-brand",
+    card: "",
     glow: "card-glow-brand",
     shimmer: "card-shimmer-brand",
     topLine: "card-top-line-brand",
@@ -31,7 +31,7 @@ export function BrokenLayerCard({ label, title, text, tone, badgeLabel, summary 
   const isLegacy = tone === "legacy"
 
   return (
-    <Card className={cn("group card-border card-hover relative overflow-hidden p-6", styles.card)}>
+    <Card className={cn("card-hover p-6", styles.card)}>
       <div className={cn("card-glow-overlay group-hover:opacity-100", styles.glow)} />
       <div className={cn("card-shimmer inset-y-0 left-0 w-1/3 skew-x-[-18deg]", styles.shimmer)} />
       <div className={cn("card-top-line", styles.topLine)} />

@@ -1,9 +1,10 @@
+import { Card } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 import type { ProfileSignal } from "./types"
 
 export function ProfileSignalCard({ label, title, detail, value, icon: Icon }: ProfileSignal) {
   return (
-    <div className="card-border card-hover-brand surface-brand group rounded-panel p-4">
+    <Card className="group p-4">
       <div className="flex items-center justify-between gap-4">
         <div className="flex items-center gap-3">
           <span className="icon-brand flex size-10 shrink-0 items-center justify-center rounded-panel text-brand-soft ring-1 ring-brand-primary/18 transition-all duration-200 group-hover:scale-105 group-hover:ring-brand-accent/28">
@@ -21,6 +22,6 @@ export function ProfileSignalCard({ label, title, detail, value, icon: Icon }: P
       </div>
 
       <Progress value={value} aria-label={`${title} signal strength`} className="mt-3 h-2.5 bg-white/6" />
-    </div>
+    </Card>
   )
 }

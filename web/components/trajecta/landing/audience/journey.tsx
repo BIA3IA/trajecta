@@ -1,3 +1,4 @@
+import { Card } from "@/components/ui/card"
 import type { JourneyStep } from "./types"
 
 export function JourneySection({ journey }: { journey: JourneyStep[] }) {
@@ -5,9 +6,9 @@ export function JourneySection({ journey }: { journey: JourneyStep[] }) {
     <div className="relative mt-4 grid gap-3 lg:grid-cols-3">
       <div className="card-top-line-brand pointer-events-none absolute top-3 right-8 left-8 hidden h-px lg:block" />
       {journey.map((step, index) => (
-        <div
+        <Card
           key={step.id}
-          className="group/step card-border card-hover-brand surface-brand relative rounded-panel p-4 transition-all duration-200"
+          className="group/step relative p-4 transition-all duration-200"
         >
           <div className="card-glow-overlay card-glow-brand group-hover/step:opacity-100" />
           <div className="flex items-center gap-3">
@@ -19,7 +20,7 @@ export function JourneySection({ journey }: { journey: JourneyStep[] }) {
           </div>
 
           <p className="typo-body-sm mt-3 text-text-secondary">{step.text}</p>
-        </div>
+        </Card>
       ))}
     </div>
   )

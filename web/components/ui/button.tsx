@@ -5,15 +5,14 @@ import type * as React from "react"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  [
+  cn(
     "inline-flex shrink-0 items-center justify-center gap-2 whitespace-nowrap",
-    "rounded-pill font-medium text-sm",
-    "outline-none transition-all duration-200",
+    "typo-label rounded-pill outline-none transition-all duration-200",
     "focus-visible:ring-2 focus-visible:ring-brand-primary/35",
     "disabled:pointer-events-none disabled:opacity-50",
     "aria-invalid:border-red-500 aria-invalid:ring-red-500/20",
     "[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
-  ].join(" "),
+  ),
   {
     variants: {
       variant: {

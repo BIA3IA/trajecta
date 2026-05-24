@@ -20,7 +20,7 @@ export function PricingCard({
   features,
 }: PricingCardProps) {
   return (
-    <Card className="group card-border card-hover surface-brand card-hover-brand relative flex h-full flex-col overflow-hidden p-6 md:p-8">
+    <Card className="card-hover flex h-full flex-col p-6 md:p-8">
       <div className="card-glow-overlay card-glow-brand group-hover:opacity-100" />
       <div className="card-shimmer card-shimmer-brand -top-6 left-[-16%] h-56 w-32 rotate-[-22deg]" />
       <div className="card-top-line card-top-line-brand" />

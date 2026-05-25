@@ -100,7 +100,6 @@
   animation-range: entry 12% cover 32%;
 }
 
-
 @media (prefers-reduced-motion: reduce) {
   .animate-float-soft,
   .animate-glow-shift,

@@ -23,7 +23,7 @@ export const pricingContent: Record<PricingAudience, PricingContent> = {
         priceLabel: "€0",
         note: "/ month",
         cta: "Try it now",
-        href: `${contactMailto}?subject=Trajecta%20Talent%20Waitlist`,
+        href: `analysis`,
         features: [
           "Skill Identity from CV, projects, and certifications",
           "Basic Gap Analysis",
@@ -83,7 +83,7 @@ export const pricingContent: Record<PricingAudience, PricingContent> = {
         priceLabel: "€199",
         note: "/ month",
         cta: "Get Pro",
-        href: `${contactMailto}?subject=Trajecta%20Company%20Demo`,
+        href: `analysis`,
         highlighted: true,
         features: [
           "Everything in Free",

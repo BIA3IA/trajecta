@@ -29,7 +29,7 @@ export function StepInput({
     <div className="reveal-up flex w-full flex-col items-center gap-10">
       <div className="flex flex-col items-center gap-4 text-center">
         <p className="typo-section-eyebrow">{eyebrow}</p>
-        <h1 className="typo-display-lg text-balance">
+        <h1 className="typo-display-lg">
           {title} <span className="text-brand-gradient">{titleAccent}</span>
         </h1>
         <p className="typo-body-lg max-w-2xl text-text-secondary">{description}</p>

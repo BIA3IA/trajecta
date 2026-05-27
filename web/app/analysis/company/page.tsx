@@ -13,7 +13,7 @@ export default function CompanyInputPage() {
   }
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col items-center justify-center px-5 py-24 sm:px-8 lg:px-10">
+    <main className="mx-auto flex min-h-screen w-full max-w-4xl flex-col items-center justify-center px-5 py-24 sm:px-8 lg:px-10">
       <StepInput
         onSubmit={handleSubmit}
         eyebrow="Company - Role Analysis"

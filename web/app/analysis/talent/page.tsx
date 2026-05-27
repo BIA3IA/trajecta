@@ -1,9 +1,9 @@
 "use client"
 
 import { useRouter } from "next/navigation"
+import { useEffect, useState } from "react"
 import { StepInput } from "@/components/trajecta/analysis/step-input"
 import type { RoleInput } from "@/components/trajecta/analysis/types"
-import { useState, useEffect } from "react"
 
 export default function TalentInputPage() {
   const router = useRouter()

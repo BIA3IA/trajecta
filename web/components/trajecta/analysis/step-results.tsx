@@ -4,7 +4,16 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import type { ResultsProps } from "./types"
 
-export function StepResults({ analysis, eyebrow, title, titleAccent, resetLabel, continueLabel, onContinue, onReset }: ResultsProps) {
+export function StepResults({
+  analysis,
+  eyebrow,
+  title,
+  titleAccent,
+  resetLabel,
+  continueLabel,
+  onContinue,
+  onReset,
+}: ResultsProps) {
   return (
     <div className="flex w-full flex-col gap-8">
       <div className="flex flex-col items-center gap-4 text-center">

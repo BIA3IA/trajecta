@@ -1,8 +1,8 @@
+import type { Metadata } from "next"
 import { AudienceSection } from "@/components/trajecta/landing/audience"
 import { BrokenLayer } from "@/components/trajecta/landing/broken-layer"
 import { HeroSection } from "@/components/trajecta/landing/hero"
 import { PricingSection } from "@/components/trajecta/landing/pricing"
-import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Trajecta: Career Intelligence for the Future of Work",

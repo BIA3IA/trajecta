@@ -1,9 +1,16 @@
+"use client"
+
+import { motion, useInView } from "framer-motion"
+import { useRef } from "react"
 import { FiArrowDown, FiArrowRight } from "react-icons/fi"
+import { slideFromLeft, slideFromRight, spring } from "@/lib/motion"
 import { BrokenLayerCard } from "./card"
 import { brokenLayerItems, brokenLayerSectionContent } from "./data"
 
 export function BrokenLayer() {
   const [legacyItem, futureItem] = brokenLayerItems
+  const cardsRef = useRef<HTMLDivElement>(null)
+  const inView = useInView(cardsRef, { once: true, margin: "-100px" })
 
   return (
     <section
@@ -18,21 +25,37 @@ export function BrokenLayer() {
         </h2>
       </div>
 
-      <div className="relative flex flex-col gap-5 md:flex-row">
-        <div className="flex flex-1 flex-col gap-2">
+      <div ref={cardsRef} className="relative flex flex-col gap-5 md:flex-row">
+        <motion.div
+          className="flex flex-1 flex-col gap-2"
+          variants={slideFromLeft}
+          initial="hidden"
+          animate={inView ? "show" : "hidden"}
+        >
           <p className="typo-section-eyebrow pl-1 text-text-muted">Without Trajecta</p>
           <BrokenLayerCard {...legacyItem} />
-        </div>
+        </motion.div>
 
         <div className="flex shrink-0 items-center justify-center py-2 md:py-0">
-          <FiArrowRight className="hidden size-6 text-brand-soft md:block" aria-hidden="true" />
-          <FiArrowDown className="size-6 text-brand-soft md:hidden" aria-hidden="true" />
+          <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            animate={inView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ duration: 0.5, ease: spring, delay: 0.35 }}
+          >
+            <FiArrowRight className="hidden size-6 text-brand-soft md:block" aria-hidden="true" />
+            <FiArrowDown className="size-6 text-brand-soft md:hidden" aria-hidden="true" />
+          </motion.div>
         </div>
 
-        <div className="flex flex-1 flex-col gap-2">
+        <motion.div
+          className="flex flex-1 flex-col gap-2"
+          variants={slideFromRight}
+          initial="hidden"
+          animate={inView ? "show" : "hidden"}
+        >
           <p className="typo-section-eyebrow pl-1">With Trajecta</p>
           <BrokenLayerCard {...futureItem} />
-        </div>
+        </motion.div>
       </div>
     </section>
   )

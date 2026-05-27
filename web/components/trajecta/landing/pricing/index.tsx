@@ -1,7 +1,8 @@
 "use client"
 
+import { AnimatePresence, motion } from "framer-motion"
 import { useState } from "react"
-
+import { ease, staggerContainer } from "@/lib/motion"
 import { SegmentedControl } from "../../../ui/segmented-control"
 import { PricingCard } from "./card"
 import { pricingAudienceOptions, pricingContent } from "./data"
@@ -37,11 +38,28 @@ export function PricingSection() {
         />
       </div>
 
-      <div className="relative mx-auto grid w-full max-w-5xl gap-5 lg:grid-cols-2">
-        {content.plans.map((plan) => (
-          <PricingCard key={plan.id} {...plan} />
-        ))}
-      </div>
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={audience}
+          className="relative mx-auto grid w-full max-w-5xl gap-5 lg:grid-cols-2"
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          variants={staggerContainer(0.1)}
+        >
+          {content.plans.map((plan) => (
+            <motion.div
+              key={plan.id}
+              variants={{
+                hidden: { opacity: 0, y: 30, scale: 0.97 },
+                show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.6, ease } },
+              }}
+            >
+              <PricingCard {...plan} />
+            </motion.div>
+          ))}
+        </motion.div>
+      </AnimatePresence>
     </section>
   )
 }

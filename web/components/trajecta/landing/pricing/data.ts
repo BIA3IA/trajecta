@@ -70,7 +70,7 @@ export const pricingContent: Record<PricingAudience, PricingContent> = {
         cta: "Try it now",
         href: `${contactMailto}?subject=Trajecta%20Company%20Intro`,
         features: [
-          "Role Definition — build weighted skill requirements",
+          "Role Definition - build weighted skill requirements",
           "Basic Talent Pool View",
           "Basic Gap Analysis",
         ],
@@ -87,9 +87,9 @@ export const pricingContent: Record<PricingAudience, PricingContent> = {
         highlighted: true,
         features: [
           "Everything in Free",
-          "Full Talent Pool View — ranked by trajectory fit",
+          "Full Talent Pool View - ranked by trajectory fit",
           "Full Gap Analysis by requirement",
-          "Live Market View — track how skill availability shifts",
+          "Live Market View - track how skill availability shifts",
           "Shortlist and export workflow",
           "Matching quality feedback loop",
         ],

@@ -18,7 +18,10 @@ export type marketData = {
   up?: boolean
 }
 
-export type roleSuggestion = { type: "refine" | "add" | "clarify"; text: string }
+export type roleSuggestion = {
+  type: "refine" | "add" | "clarify"
+  text: string
+}
 
 export type keyFinding = {
   type: "risk" | "insight"
@@ -27,5 +30,14 @@ export type keyFinding = {
 }
 
 export type emergingSkill = {
-  skill: string; horizon: string; reason: string
+  skill: string
+  horizon: string
+  reason: string
+}
+
+export type adjacentRole = {
+  title: string
+  overlap: number
+  sharedSkills: string[]
+  note: string
 }

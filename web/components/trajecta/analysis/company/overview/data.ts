@@ -1,4 +1,4 @@
-import type { keyFinding, marketData, roleData, roleSuggestion, emergingSkill } from "./types"
+import type { adjacentRole, emergingSkill, keyFinding, marketData, roleData, roleSuggestion } from "./types"
 
 export const roleProfile: roleData = {
   title: "Frontend Developer",
@@ -34,7 +34,7 @@ export const marketSignals: marketData[] = [
 export const roleSuggestions: roleSuggestion[] = [
   {
     type: "refine" as const,
-    text: '"Testing" and "Performance optimization" appear in nearly every Frontend Developer spec at this level and won\'t help you differentiate. If these matter to you specifically, name the context — e.g. "component-level testing with Vitest" or "Core Web Vitals ownership".',
+    text: '"Testing" and "Performance optimization" appear in nearly every Frontend Developer spec at this level and won\'t help you differentiate. If these matter to you specifically, name the context - e.g. "component-level testing with Vitest" or "Core Web Vitals ownership".',
   },
   {
     type: "add" as const,
@@ -55,7 +55,7 @@ export const keyFindings: keyFinding[] = [
   {
     type: "insight" as const,
     title: "Soft skills are a real differentiator here",
-    body: "Async communication and ownership mindset are rare to verify in traditional screening — yet they appear central to this role. Evidence-based evaluation matters more than credentials.",
+    body: "Async communication and ownership mindset are rare to verify in traditional screening - yet they appear central to this role. Evidence-based evaluation matters more than credentials.",
   },
   {
     type: "risk" as const,
@@ -79,5 +79,26 @@ export const emergingSkills: emergingSkill[] = [
     skill: "Prompt engineering basics",
     horizon: "18-24 months",
     reason: "Product-aware engineers will increasingly interface with AI features directly.",
+  },
+]
+
+export const adjacentRoles: adjacentRole[] = [
+  {
+    title: "Full-stack Engineer",
+    overlap: 82,
+    sharedSkills: ["TypeScript", "React", "API design", "Testing"],
+    note: "Widest overlap - easiest adjacent pool",
+  },
+  {
+    title: "UI Engineer",
+    overlap: 71,
+    sharedSkills: ["React", "Design systems", "Accessibility"],
+    note: "High domain overlap, weaker backend",
+  },
+  {
+    title: "Product Engineer",
+    overlap: 64,
+    sharedSkills: ["Product thinking", "React", "Ownership mindset"],
+    note: "Strong on soft skills, variable technical depth",
   },
 ]

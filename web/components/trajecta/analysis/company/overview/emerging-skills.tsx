@@ -1,6 +1,6 @@
+import { FiZap } from "react-icons/fi"
 import { Badge } from "@/components/ui/badge"
 import { cn } from "@/lib/utils"
-import { FiZap } from "react-icons/fi"
 import type { emergingSkill } from "./types"
 
 export function EmergingSkills({ emergingSkills }: { emergingSkills: emergingSkill[] }) {
@@ -18,12 +18,11 @@ export function EmergingSkills({ emergingSkills }: { emergingSkills: emergingSki
           const isLast = i === emergingSkills.length - 1
           return (
             <div key={skill.skill} className="flex gap-4">
-
               <div className="flex w-5 shrink-0 flex-col items-center">
                 <div className="flex size-5 shrink-0 items-center justify-center rounded-full border border-brand-primary/30 bg-surface-2">
                   <FiZap className="size-3 text-brand-soft" aria-hidden />
                 </div>
-                {!isLast && <div className="mt-1 w-px flex-1 bg-border-subtle" />}
+                {!isLast && <div className="w-px flex-1 bg-border-subtle" />}
               </div>
 
               <div className={cn("flex flex-col gap-1 pb-6", isLast && "pb-0")}>

@@ -12,8 +12,7 @@ export function CompanyAnalysis() {
       <div className="flex flex-col items-center gap-4 text-center">
         <p className="typo-section-eyebrow">Company - Analysis</p>
         <h1 className="typo-display-lg text-balance">
-          {/* TODO: Sostituire sto testo */}
-          The <span className="text-brand-gradient">role intelligence</span>
+          Your <span className="text-brand-gradient">Role Intelligence</span>
         </h1>
       </div>
 

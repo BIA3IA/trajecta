@@ -1,4 +1,4 @@
-import type { keyFinding, marketData, roleData, roleSuggestion } from "./types"
+import type { keyFinding, marketData, roleData, roleSuggestion, emergingSkill } from "./types"
 
 export const roleProfile: roleData = {
   title: "Frontend Developer",
@@ -61,5 +61,23 @@ export const keyFindings: keyFinding[] = [
     type: "risk" as const,
     title: "38% of similar roles stay open more than 60 days",
     body: "Roles with this combination of technical and domain expectations often stall in late-stage evaluation. Consider widening the threshold or investing in onboarding for partial fits.",
+  },
+]
+
+export const emergingSkills: emergingSkill[] = [
+  {
+    skill: "AI-assisted development",
+    horizon: "6-12 months",
+    reason: "LLM tooling is becoming a baseline expectation in product-focused frontend roles.",
+  },
+  {
+    skill: "Edge runtime & RSC",
+    horizon: "12-18 months",
+    reason: "Next.js App Router patterns will soon be assumed knowledge for React roles at this level.",
+  },
+  {
+    skill: "Prompt engineering basics",
+    horizon: "18-24 months",
+    reason: "Product-aware engineers will increasingly interface with AI features directly.",
   },
 ]

@@ -25,3 +25,7 @@ export type keyFinding = {
   title: string
   body: string
 }
+
+export type emergingSkill = {
+  skill: string; horizon: string; reason: string
+}

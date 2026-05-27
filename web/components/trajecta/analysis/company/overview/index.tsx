@@ -1,4 +1,5 @@
-import { keyFindings, marketSignals, roleProfile, roleSuggestions } from "./data"
+import { emergingSkills, keyFindings, marketSignals, roleProfile, roleSuggestions } from "./data"
+import { EmergingSkills } from "./emerging-skills"
 import { KeyFindings } from "./key-findings"
 import { MarketSignals } from "./market-signals"
 import { RoleExtracted } from "./role-extracted"
@@ -10,6 +11,7 @@ export function TabOverview() {
       <RoleExtracted roleProfile={roleProfile} />
       <MarketSignals marketSignals={marketSignals} />
       <KeyFindings keyFindings={keyFindings} />
+      <EmergingSkills emergingSkills={emergingSkills} />
       <RoleRefinement roleSuggestions={roleSuggestions} />
     </div>
   )

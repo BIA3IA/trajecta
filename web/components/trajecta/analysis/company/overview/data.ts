@@ -1,4 +1,4 @@
-import type { marketData, roleData, roleSuggestion } from "./types"
+import type { keyFinding, marketData, roleData, roleSuggestion } from "./types"
 
 export const roleProfile: roleData = {
   title: "Frontend Developer",
@@ -43,5 +43,23 @@ export const roleSuggestions: roleSuggestion[] = [
   {
     type: "clarify" as const,
     text: '"Performance optimization" is broad. Specifying Core Web Vitals or bundle size reduction would attract more precisely matched profiles.',
+  },
+]
+
+export const keyFindings: keyFinding[] = [
+  {
+    type: "risk" as const,
+    title: "Tight supply at this seniority level",
+    body: "Mid-Senior TypeScript engineers with product sensibility are among the hardest profiles to source right now. Expect longer cycles and competing offers.",
+  },
+  {
+    type: "insight" as const,
+    title: "Soft skills are a real differentiator here",
+    body: "Async communication and ownership mindset are rare to verify in traditional screening — yet they appear central to this role. Evidence-based evaluation matters more than credentials.",
+  },
+  {
+    type: "risk" as const,
+    title: "38% of similar roles stay open more than 60 days",
+    body: "Roles with this combination of technical and domain expectations often stall in late-stage evaluation. Consider widening the threshold or investing in onboarding for partial fits.",
   },
 ]

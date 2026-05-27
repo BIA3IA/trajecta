@@ -19,3 +19,9 @@ export type marketData = {
 }
 
 export type roleSuggestion = { type: "refine" | "add" | "clarify"; text: string }
+
+export type keyFinding = {
+  type: "risk" | "insight"
+  title: string
+  body: string
+}

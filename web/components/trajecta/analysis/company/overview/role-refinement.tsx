@@ -23,12 +23,12 @@ export function RoleRefinement({ roleSuggestions }: { roleSuggestions: roleSugge
             <div
               key={suggestion.type}
               className={cn(
-                "flex items-start gap-3 py-4",
+                "flex items-center gap-3 py-4",
                 i === 0 && "pt-0",
                 i === roleSuggestions.length - 1 && "pb-0"
               )}
             >
-              <Badge className={cn("w-16 shrink-0 justify-center self-start", styles.cls)}>{styles.label}</Badge>
+              <Badge className={cn("w-16 shrink-0 justify-center", styles.cls)}>{styles.label}</Badge>
               <p className="typo-body-sm text-text-secondary">{suggestion.text}</p>
             </div>
           )

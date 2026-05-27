@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils"
 const buttonVariants = cva(
   cn(
     "inline-flex shrink-0 items-center justify-center gap-2 whitespace-nowrap",
-    "typo-label rounded-pill outline-none transition-all duration-200",
+    "typo-label rounded-pill px-4 py-2 outline-none transition-all duration-200",
     "focus-visible:ring-2 focus-visible:ring-brand-primary/35",
     "disabled:pointer-events-none disabled:opacity-50",
     "aria-invalid:border-red-500 aria-invalid:ring-red-500/20",

@@ -17,7 +17,7 @@ type TabsProps<T extends string = string> = {
 }
 
 export function Tabs<T extends string = string>({ tabs, defaultValue, onChange, children, className }: TabsProps<T>) {
-  const [active, setActive] = useState<T>((defaultValue ?? tabs[0]!.id) as T)
+  const [active, setActive] = useState<T>((defaultValue ?? tabs[0]?.id) as T)
 
   function handleSelect(id: T) {
     setActive(id)

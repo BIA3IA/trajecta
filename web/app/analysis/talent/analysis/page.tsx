@@ -1,8 +1,8 @@
 "use client"
 
-import { TalentAnalysis } from "@/components/trajecta/analysis/talent"
 import { useRouter } from "next/navigation"
 import { useEffect } from "react"
+import { TalentAnalysis } from "@/components/trajecta/analysis/talent"
 
 export default function TalentAnalysisPage() {
   const router = useRouter()

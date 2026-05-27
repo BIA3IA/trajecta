@@ -17,3 +17,5 @@ export type marketData = {
   sub: string
   up?: boolean
 }
+
+export type roleSuggestion = { type: "refine" | "add" | "clarify"; text: string }

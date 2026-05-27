@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { FiArrowRight } from "react-icons/fi"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
@@ -8,6 +8,7 @@ import type { InputProps } from "./types"
 
 export function StepInput({
   onSubmit,
+  initialValue = "",
   eyebrow,
   title,
   titleAccent,
@@ -16,7 +17,11 @@ export function StepInput({
   placeholder,
   submitLabel,
 }: InputProps) {
-  const [value, setValue] = useState("")
+  const [value, setValue] = useState(initialValue)
+
+  useEffect(() => {
+    if (initialValue) setValue(initialValue)
+  }, [initialValue])
 
   const canSubmit = value.trim().length > 20
 

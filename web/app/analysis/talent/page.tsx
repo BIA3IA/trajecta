@@ -3,9 +3,15 @@
 import { useRouter } from "next/navigation"
 import { StepInput } from "@/components/trajecta/analysis/step-input"
 import type { RoleInput } from "@/components/trajecta/analysis/types"
+import { useState, useEffect } from "react"
 
 export default function TalentInputPage() {
   const router = useRouter()
+  const [saved, setSaved] = useState("")
+
+  useEffect(() => {
+    setSaved(sessionStorage.getItem("trajecta:talent:description") ?? "")
+  }, [])
 
   function handleSubmit({ description }: RoleInput) {
     sessionStorage.setItem("trajecta:talent:description", description)
@@ -16,6 +22,7 @@ export default function TalentInputPage() {
     <main className="mx-auto flex min-h-screen w-full max-w-4xl flex-col items-center justify-center px-5 py-24 sm:px-8 lg:px-10">
       <StepInput
         onSubmit={handleSubmit}
+        initialValue={saved}
         eyebrow="Talent - Self Analysis"
         title="Describe yourself to see "
         titleAccent="your skill profile"

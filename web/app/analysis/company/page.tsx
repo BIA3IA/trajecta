@@ -1,11 +1,17 @@
 "use client"
 
 import { useRouter } from "next/navigation"
+import { useEffect, useState } from "react"
 import { StepInput } from "@/components/trajecta/analysis/step-input"
 import type { RoleInput } from "@/components/trajecta/analysis/types"
 
 export default function CompanyInputPage() {
   const router = useRouter()
+  const [saved, setSaved] = useState("")
+
+  useEffect(() => {
+    setSaved(sessionStorage.getItem("trajecta:company:description") ?? "")
+  }, [])
 
   function handleSubmit({ description }: RoleInput) {
     sessionStorage.setItem("trajecta:company:description", description)
@@ -16,6 +22,7 @@ export default function CompanyInputPage() {
     <main className="mx-auto flex min-h-screen w-full max-w-4xl flex-col items-center justify-center px-5 py-24 sm:px-8 lg:px-10">
       <StepInput
         onSubmit={handleSubmit}
+        initialValue={saved}
         eyebrow="Company - Role Analysis"
         title="Describe the role"
         titleAccent="you're hiring for"

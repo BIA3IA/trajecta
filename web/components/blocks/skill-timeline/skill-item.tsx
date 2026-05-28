@@ -1,6 +1,6 @@
 import { FiZap } from "react-icons/fi"
+import { Badge } from "@/components/ui/badge"
 import { cn } from "@/lib/utils"
-import { Badge } from "../badge"
 import type { emergingSkill } from "./types"
 
 export function SkillItem({ skill, isLast }: { skill: emergingSkill; isLast?: boolean }) {

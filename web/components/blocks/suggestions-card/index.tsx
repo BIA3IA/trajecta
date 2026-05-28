@@ -1,6 +1,6 @@
+import { Badge } from "@/components/ui/badge"
+import { Card } from "@/components/ui/card"
 import { cn } from "@/lib/utils"
-import { Badge } from "../badge"
-import { Card } from "../card"
 import type { suggestion } from "./types"
 
 const styles: Record<suggestion["type"], { label: string; cls: string }> = {

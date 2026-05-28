@@ -1,5 +1,5 @@
+import { SkillCard } from "@/components/blocks/skill-card"
 import { Badge } from "@/components/ui/badge"
-import { SkillCard } from "@/components/ui/skill-card"
 import type { profileData } from "./types"
 
 type Props = {

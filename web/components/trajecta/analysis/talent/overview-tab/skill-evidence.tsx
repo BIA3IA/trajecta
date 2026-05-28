@@ -1,5 +1,5 @@
-import { EvidenceCard } from "@/components/ui/evidence-card"
-import type { skillEvidence } from "../../../../ui/evidence-card/types"
+import { EvidenceCard } from "@/components/blocks/evidence-card"
+import type { skillEvidence } from "@/components/blocks/evidence-card/types"
 
 export function SkillEvidence({ evidence }: { evidence: skillEvidence[] }) {
   return (

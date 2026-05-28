@@ -2,8 +2,8 @@
 
 import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
+import { ProfileCard } from "@/components/blocks/profile-card"
 import { Hint } from "@/components/ui/hint"
-import { ProfileCard } from "@/components/ui/profile-card"
 import { ease } from "@/lib/motion"
 import { previewCardContent, previewHints } from "./data"
 

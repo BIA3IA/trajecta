@@ -1,6 +1,6 @@
-import { Badge } from "../badge"
-import { Card } from "../card"
-import { Progress } from "../progress"
+import { Badge } from "@/components/ui/badge"
+import { Card } from "@/components/ui/card"
+import { Progress } from "@/components/ui/progress"
 import type { roleMatch } from "./types"
 
 export function RoleCard({ role }: { role: roleMatch }) {

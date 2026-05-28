@@ -1,5 +1,5 @@
-import { RoleCard } from "@/components/ui/role-card"
-import type { roleMatch } from "@/components/ui/role-card/types"
+import { RoleCard } from "@/components/blocks/role-card"
+import type { roleMatch } from "@/components/blocks/role-card/types"
 
 type Props = {
   roles: roleMatch[]

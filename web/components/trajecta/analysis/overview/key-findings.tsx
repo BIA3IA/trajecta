@@ -1,5 +1,5 @@
-import { FindingCard } from "@/components/ui/finding-card"
-import type { keyFinding } from "@/components/ui/finding-card/types"
+import { FindingCard } from "@/components/blocks/finding-card"
+import type { keyFinding } from "@/components/blocks/finding-card/types"
 
 export function KeyFindings({ keyFindings }: { keyFindings: keyFinding[] }) {
   return (

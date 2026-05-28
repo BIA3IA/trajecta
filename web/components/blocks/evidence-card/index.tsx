@@ -1,5 +1,5 @@
 import { FiAward, FiBriefcase, FiCode } from "react-icons/fi"
-import { Badge } from "../badge"
+import { Badge } from "@/components/ui/badge"
 import type { skillEvidence } from "./types"
 
 const config: Record<skillEvidence["kind"], { icon: React.ElementType; label: string }> = {

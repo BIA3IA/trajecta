@@ -1,6 +1,6 @@
 import { FiCompass, FiLayers, FiTarget } from "react-icons/fi"
+import type { ProfileCardProps } from "@/components/blocks/profile-card/types"
 import type { HintProps } from "@/components/ui/hint"
-import type { ProfileCardProps } from "@/components/ui/profile-card/types"
 
 export const heroContent = {
   eyebrow: "Career intelligence built around real skill evidence",

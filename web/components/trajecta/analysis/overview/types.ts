@@ -1,4 +1,4 @@
-import type { skillGroup } from "@/components/ui/skill-card/types"
+import type { skillGroup } from "@/components/blocks/skill-card/types"
 
 export type profileData = {
   title: string

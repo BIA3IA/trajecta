@@ -1,5 +1,5 @@
-import { MarketCard } from "@/components/ui/market-card"
-import type { marketData } from "@/components/ui/market-card/types"
+import { MarketCard } from "@/components/blocks/market-card"
+import type { marketData } from "@/components/blocks/market-card/types"
 
 export function MarketSignals({ marketSignals }: { marketSignals: marketData[] }) {
   return (

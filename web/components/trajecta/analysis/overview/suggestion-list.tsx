@@ -1,5 +1,5 @@
-import { SuggestionsCard } from "@/components/ui/suggestions-card"
-import type { suggestion } from "@/components/ui/suggestions-card/types"
+import { SuggestionsCard } from "@/components/blocks/suggestions-card"
+import type { suggestion } from "@/components/blocks/suggestions-card/types"
 
 type Props = {
   suggestions: suggestion[]

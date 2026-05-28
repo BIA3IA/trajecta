@@ -1,5 +1,5 @@
-import { SkillTimeline } from "@/components/ui/skill-timeline"
-import type { emergingSkill } from "@/components/ui/skill-timeline/types"
+import { SkillTimeline } from "@/components/blocks/skill-timeline"
+import type { emergingSkill } from "@/components/blocks/skill-timeline/types"
 
 export function EmergingSkills({ emergingSkills }: { emergingSkills: emergingSkill[] }) {
   return (

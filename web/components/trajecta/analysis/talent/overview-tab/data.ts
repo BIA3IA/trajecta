@@ -1,9 +1,9 @@
-import type { skillEvidence } from "@/components/ui/evidence-card/types"
-import type { keyFinding } from "@/components/ui/finding-card/types"
-import type { marketData } from "@/components/ui/market-card/types"
-import type { roleMatch } from "@/components/ui/role-card/types"
-import type { emergingSkill } from "@/components/ui/skill-timeline/types"
-import type { suggestion } from "@/components/ui/suggestions-card/types"
+import type { skillEvidence } from "@/components/blocks/evidence-card/types"
+import type { keyFinding } from "@/components/blocks/finding-card/types"
+import type { marketData } from "@/components/blocks/market-card/types"
+import type { roleMatch } from "@/components/blocks/role-card/types"
+import type { emergingSkill } from "@/components/blocks/skill-timeline/types"
+import type { suggestion } from "@/components/blocks/suggestions-card/types"
 import type { profileData } from "../../overview/types"
 
 export const talentProfile: profileData = {

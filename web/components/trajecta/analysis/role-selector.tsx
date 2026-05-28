@@ -1,6 +1,5 @@
 "use client"
 
-import Link from "next/link"
 import { useState } from "react"
 import { FiArrowRight, FiCheck } from "react-icons/fi"
 import { Button } from "@/components/ui/button"
@@ -9,7 +8,7 @@ import { cn } from "@/lib/utils"
 import { roles } from "./data"
 import type { Role } from "./types"
 
-export function RoleSelector() {
+export function RoleSelector({ onSubmit }: { onSubmit: (role: Role) => void }) {
   const [selected, setSelected] = useState<Role | null>(null)
 
   const selectedRole = roles.find((r) => r.id === selected)
@@ -64,14 +63,12 @@ export function RoleSelector() {
       </div>
 
       {selected ? (
-        <Button asChild variant="gradient">
-          <Link href={`/analysis/${selected}`}>
-            <span className="relative z-10">{continueLabel}</span>
-            <FiArrowRight
-              className="relative z-10 transition-transform duration-200 ease-out group-hover:translate-x-0.5"
-              aria-hidden
-            />
-          </Link>
+        <Button variant="gradient" onClick={() => onSubmit(selected)}>
+          <span className="relative z-10">{continueLabel}</span>
+          <FiArrowRight
+            className="relative z-10 transition-transform duration-200 ease-out group-hover:translate-x-0.5"
+            aria-hidden
+          />
         </Button>
       ) : (
         <Button variant="gradient" disabled>

@@ -2,9 +2,9 @@
 
 import { Tabs } from "@/components/ui/tabs"
 import { tabs } from "./data"
+import { TabOverview } from "./overview-tab"
 import { TabCompanies } from "./tab-companies"
 import { TabMarket } from "./tab-market"
-import { TabOverview } from "./tab-overview"
 
 export function TalentAnalysis() {
   return (
@@ -12,8 +12,7 @@ export function TalentAnalysis() {
       <div className="flex flex-col items-center gap-4 text-center">
         <p className="typo-section-eyebrow">Talent - Analysis</p>
         <h1 className="typo-display-lg text-balance">
-          {/* TODO: Sostituire sto testo */}
-          Your <span className="text-brand-gradient">skill identity</span>
+          Your <span className="text-brand-gradient">Skill Identity</span>
         </h1>
       </div>
 

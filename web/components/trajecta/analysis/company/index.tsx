@@ -2,9 +2,9 @@
 
 import { Tabs } from "@/components/ui/tabs"
 import { tabs } from "./data"
-import { TabOverview } from "./overview"
 import { TabMarket } from "./tab-market"
 import { TabTalentPool } from "./tab-talent-pool"
+import { TabOverview } from "./overview-tab"
 
 export function CompanyAnalysis() {
   return (

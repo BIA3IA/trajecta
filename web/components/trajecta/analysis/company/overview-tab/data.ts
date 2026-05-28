@@ -1,6 +1,11 @@
-import type { adjacentRole, emergingSkill, keyFinding, marketData, roleData, roleSuggestion } from "./types"
+import type { keyFinding } from "@/components/ui/finding-card/types"
+import type { marketData } from "@/components/ui/market-card/types"
+import type { roleMatch } from "@/components/ui/role-card/types"
+import type { emergingSkill } from "@/components/ui/skill-timeline/types"
+import type { suggestion } from "@/components/ui/suggestions-card/types"
+import type { profileData } from "../../overview/types"
 
-export const roleProfile: roleData = {
+export const roleProfile: profileData = {
   title: "Frontend Developer",
   seniority: "Mid · Senior",
   summary:
@@ -31,7 +36,7 @@ export const marketSignals: marketData[] = [
   { label: "Companies competing", value: "23", sub: "Actively hiring now" },
 ]
 
-export const roleSuggestions: roleSuggestion[] = [
+export const roleSuggestions: suggestion[] = [
   {
     type: "refine" as const,
     text: '"Testing" and "Performance optimization" appear in nearly every Frontend Developer spec at this level and won\'t help you differentiate. If these matter to you specifically, name the context - e.g. "component-level testing with Vitest" or "Core Web Vitals ownership".',
@@ -82,22 +87,22 @@ export const emergingSkills: emergingSkill[] = [
   },
 ]
 
-export const adjacentRoles: adjacentRole[] = [
+export const adjacentRoles: roleMatch[] = [
   {
     title: "Full-stack Engineer",
-    overlap: 82,
+    match: 82,
     sharedSkills: ["TypeScript", "React", "API design", "Testing"],
     note: "Widest overlap - easiest adjacent pool",
   },
   {
     title: "UI Engineer",
-    overlap: 71,
+    match: 71,
     sharedSkills: ["React", "Design systems", "Accessibility"],
     note: "High domain overlap, weaker backend",
   },
   {
     title: "Product Engineer",
-    overlap: 64,
+    match: 64,
     sharedSkills: ["Product thinking", "React", "Ownership mindset"],
     note: "Strong on soft skills, variable technical depth",
   },

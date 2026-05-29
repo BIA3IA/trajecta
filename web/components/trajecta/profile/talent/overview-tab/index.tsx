@@ -5,7 +5,7 @@ import { ProfileCard } from "../../overview/profile-card"
 import { RoleMatchGrid } from "../../overview/role-match-grid"
 import { SuggestionList } from "../../overview/suggestion-list"
 import { emergingSkills, evidence, fitRoles, keyFindings, marketSignals, skillSuggestions, talentProfile } from "./data"
-import { SkillEvidence } from "./skill-evidence"
+import { SkillEvidence } from "../../overview/skill-evidence"
 
 export function TabOverview() {
   return (

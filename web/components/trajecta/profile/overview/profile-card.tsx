@@ -17,7 +17,9 @@ export function ProfileCard({ profile, eyebrow }: Props) {
           {profile.subtitle && <p className="typo-body text-text-secondary">{profile.subtitle}</p>}
           <p className="typo-body mt-1 max-w-2xl text-text-secondary">{profile.summary}</p>
         </div>
-        <Badge className="mt-1 shrink-0">{profile.seniority}</Badge>
+        <Badge severity="brand" className="mt-1 shrink-0">
+          {profile.seniority}
+        </Badge>
       </div>
 
       <div className="grid gap-4 sm:grid-cols-3">

@@ -4,7 +4,7 @@ import { Tabs } from "@/components/ui/tabs"
 import { tabs } from "./data"
 import { TabOverview } from "./overview-tab"
 import { TabCompanies } from "./tab-companies"
-import { TabMarket } from "./tab-market"
+import { TabMarket } from "./market-tab"
 
 export function TalentAnalysis() {
   return (

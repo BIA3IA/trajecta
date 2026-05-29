@@ -3,9 +3,9 @@ import { KeyFindings } from "../../overview/key-findings"
 import { MarketSignals } from "../../overview/market-signals"
 import { ProfileCard } from "../../overview/profile-card"
 import { RoleMatchGrid } from "../../overview/role-match-grid"
+import { SkillEvidence } from "../../overview/skill-evidence"
 import { SuggestionList } from "../../overview/suggestion-list"
 import { emergingSkills, evidence, fitRoles, keyFindings, marketSignals, skillSuggestions, talentProfile } from "./data"
-import { SkillEvidence } from "../../overview/skill-evidence"
 
 export function TabOverview() {
   return (

@@ -11,7 +11,11 @@ const severityStyles: Record<BadgeSeverity, string> = {
   subtle: "border-border-subtle bg-surface-2 text-text-muted",
 }
 
-function Badge({ className, severity = "brand", ...props }: React.ComponentProps<"span"> & { severity?: BadgeSeverity }) {
+function Badge({
+  className,
+  severity = "brand",
+  ...props
+}: React.ComponentProps<"span"> & { severity?: BadgeSeverity }) {
   return (
     <span
       className={cn(
